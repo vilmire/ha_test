@@ -12,7 +12,7 @@ COPY js /js
 RUN apk add --no-cache jq npm make gcc g++ python3 linux-headers udev && \
     npm init -f && \
     npm install mqtt && \
-    npm install serialport --build-from-source=serialport 
+    npm install serialport --unsafe-perm --build-from-source=serialport 
 
 WORKDIR /share
 
