@@ -14,7 +14,7 @@ RUN npm init -f
 RUN npm install mqtt -g
 RUN apk add --no-cache nodejs
 RUN apk add --no-cache make gcc g++ python3 linux-headers udev
-RUN npm install serialport --unsafe-perm --build-from-source
+RUN npm i serialport@latest
 
 WORKDIR /share
 
