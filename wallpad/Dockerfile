@@ -17,7 +17,7 @@ WORKDIR /src
 RUN apk add --no-cache nodejs
 RUN apk add --no-cache make gcc g++ python3 linux-headers udev
 RUN npm i node-pre-gyp -g
-RUN npm install serialport --build-from-source=serialport 
+RUN npm install serialport --unsafe-perm --build-from-source=serialport 
 
 WORKDIR /share
 
