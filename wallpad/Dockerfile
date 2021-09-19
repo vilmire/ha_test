@@ -1,4 +1,4 @@
-#ARG BUILD_FROM="mhart/alpine-node:4"
+#ARG BUILD_FROM="alpine:3.14"
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
